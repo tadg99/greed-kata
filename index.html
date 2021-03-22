@@ -6,7 +6,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Greed Kata</title>
-    <link rel="stylesheet" href="greedkata.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
   </head>
 
   <body>
@@ -23,14 +24,15 @@
             <label><input type="radio" name="input" value="random" /> Random</label>
           </p>
           <div id="dice">
-            <input type="number" min="1" max="6">
-            <input type="number" min="1" max="6">
-            <input type="number" min="1" max="6">
-            <input type="number" min="1" max="6">
-            <input type="number" min="1" max="6">
+            <input id="die1" type="number" min="1" max="6" value="1">
+            <input id="die2" type="number" min="1" max="6" value="1">
+            <input id="die3" type="number" min="1" max="6" value="1">
+            <input id="die4" type="number" min="1" max="6" value="1">
+            <input id="die5" type="number" min="1" max="6" value="1">
           </div>
 
-          <button id="best">Get Best Score</button>
+          <button id="bestButton">Get Best Score</button>
+          <p id="bestLabel">Best Score: 1200</p>
         </article>
 
         <section>
