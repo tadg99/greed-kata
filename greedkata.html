@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+  HTML for Greed Kata dice game.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Greed Kata</title>
+    <link rel="stylesheet" href="greedkata.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Greed Kata</h1>
+    </header>
+
+    <main>
+      <section id="menu-view">
+        <article>
+          <h2>Choose an input type:</h2>
+          <p>
+            <label><input type="radio" name="input" value="manual" checked /> Manual</label>
+            <label><input type="radio" name="input" value="random" /> Random</label>
+          </p>
+          <div id="dice">
+            <input type="number" min="1" max="6">
+            <input type="number" min="1" max="6">
+            <input type="number" min="1" max="6">
+            <input type="number" min="1" max="6">
+            <input type="number" min="1" max="6">
+          </div>
+
+          <button id="best">Get Best Score</button>
+        </article>
+
+        <section>
+          <header>
+            <h2>Rules</h2>
+          </header>
+          <p>
+            Greed Kata is a game where players roll 5 dice with the goal of getting the highest score.
+            Scoring is determined by the following rules:
+          </p>
+          <div id="rules">
+            <ul>
+                <li>A single one (100)</li>
+                <li>A single five (50)</li>
+                <li>Triple ones [1,1,1] (1000)</li>
+                <li>Triple twos [2,2,2] (200)</li>
+                <li>Triple threes [3,3,3] (300)</li>
+                <li>Triple fours [4,4,4] (400)</li>
+                <li>Triple fives [5,5,5] (500)</li>
+                <li>Triple sixes [6,6,6] (600)</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
