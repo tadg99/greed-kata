@@ -2,7 +2,7 @@
 
 ## Questions:
 
-These are some questions about the problem that may have changed my approach to the problem:
+These are some questions about the problem that answers to may have changed my approach:
 
 Will the rules ever be changed or will new rules be added?
 
@@ -14,7 +14,7 @@ Here are some assumptions I made while solving the problem:
 
 The rolls consist of standard, 6-sided dice.
 
-There is no order associated with the dice roll, i.e., all dice are rolled at the same time.
+Ordering of the dice does not matter.
 
 A single die may only be used to satisfy one scoring rule.
  
