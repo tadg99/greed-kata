@@ -54,6 +54,12 @@ public class GreedKataTest {
         } else {
             System.out.println("Failed test 'testBestScoreBadInput3'");
         }
+
+        if (testBestScoreBadInput4()) {
+            System.out.println("Passed test 'testBestScoreBadInput4'");
+        } else {
+            System.out.println("Failed test 'testBestScoreBadInput4'");
+        }
     }
 
     //Tests bestScore method on example 1 from spec
@@ -123,6 +129,17 @@ public class GreedKataTest {
     //Tests bestScore method on an input array with value greater than 6
     public static boolean testBestScoreBadInput3() {
         int[] roll = new int[]{1, 1, 1, 5, 7};
+        try {
+            GreedKata.bestScore(roll);
+            return false;
+        } catch (IllegalArgumentException e) {
+            return true;
+        }
+    }
+
+    //Tests bestScore method on a null input array
+    public static boolean testBestScoreBadInput4() {
+        int[] roll = null;
         try {
             GreedKata.bestScore(roll);
             return false;
